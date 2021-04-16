@@ -10,7 +10,7 @@ while {getopts fblpd arg} {
             echo -e '\033[32m\033[1m[migrate]\033[0m'
             python manage.py migrate
             echo -e '\033[32m\033[1m[run test]\033[0m'
-            python manage.py runtest
+            python manage.py test
             echo -e '\033[32m\033[1m[run server]\033[0m'
             python manage.py runserver 0.0.0.0:8000
         ;;
